@@ -35,6 +35,8 @@ class MultipeSourcesPersonMapperTest {
 
         final PersonWithAddressDto result = personMapper.toDto(personEntity, addressEntity);
 
+        System.out.println(ReflectionToStringBuilder.toString(result, ToStringStyle.MULTI_LINE_STYLE));
+
         assertAll(
             () -> assertThat(result.getId()).isEqualTo(123L),
             () -> assertThat(result.getGivenname()).isEqualTo("Max"),
@@ -45,6 +47,5 @@ class MultipeSourcesPersonMapperTest {
             () -> assertThat(result.getCity()).isEqualTo("Musterhausen")
         );
 
-        System.out.println(ReflectionToStringBuilder.toString(result, ToStringStyle.MULTI_LINE_STYLE));
     }
 }
