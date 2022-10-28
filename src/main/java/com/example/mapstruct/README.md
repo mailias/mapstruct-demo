@@ -10,12 +10,16 @@
 5. [Benutzerdefinierte Mapping-Methoden](./custom_methods/README.md) 
 6. [Aufrufen andere Mapper](./invoking_other_mappers/README.md)
 7. [Qualifizierter Mapping-Methoden-Aufruf](./qualified/README.md)
-
+8. [Decorator](./decorator/README.md)
 
 
 # TODO
+TODO [12. Customizing mappings](https://mapstruct.org/documentation/stable/reference/html/#_customizing_mappings)
+- **[12.2. Mapping customization with before-mapping and after-mapping methods !!!](https://mapstruct.org/documentation/stable/reference/html/#customizing-mappings-with-before-and-after)**
 
-TODO Implementing a Decorator: https://reflectoring.io/java-mapping-with-mapstruct/ 
+
+
+
 
 TODO [5. Data type conversions](https://mapstruct.org/documentation/stable/reference/html/#datatype-conversions)
 - [5.1. Implicit type conversions](https://mapstruct.org/documentation/stable/reference/html/#implicit-type-conversions)
@@ -48,10 +52,6 @@ TODO [11. Reusing mapping configurations](https://mapstruct.org/documentation/st
 - [11.2. Inverse mappings](https://mapstruct.org/documentation/stable/reference/html/#inverse-mappings) -- bereits gezeigt
 - [11.3. Shared configurations](https://mapstruct.org/documentation/stable/reference/html/#shared-configurations)
 
-
-TODO [12. Customizing mappings](https://mapstruct.org/documentation/stable/reference/html/#_customizing_mappings)
-- [12.1. Mapping customization with decorators](https://mapstruct.org/documentation/stable/reference/html/#customizing-mappers-using-decorators)
-- **[12.2. Mapping customization with before-mapping and after-mapping methods !!!](https://mapstruct.org/documentation/stable/reference/html/#customizing-mappings-with-before-and-after)**
 
 
 
