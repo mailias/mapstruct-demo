@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package com.example.mapstruct.common.dto;
 
 import java.util.List;
 import lombok.Getter;
@@ -8,10 +8,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class PersonDto {
+public class PersonWithChildIdsDto {
     Long id;
     String givenname;
     String surname;
     List<Long> childrenIds;
-
 }

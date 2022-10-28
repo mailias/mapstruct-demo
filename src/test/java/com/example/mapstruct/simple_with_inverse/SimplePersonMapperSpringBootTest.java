@@ -1,10 +1,10 @@
-package com.example.demo.mapper;
+package com.example.mapstruct.simple_with_inverse;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
-import com.example.demo.dto.PersonDto;
-import com.example.demo.entity.Person;
+import com.example.mapstruct.common.dto.SimplePersonDto;
+import com.example.mapstruct.common.entity.SimplePersonEntity;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,21 +12,21 @@ import org.springframework.boot.test.context.SpringBootTest;
 /**
  * Als {@link SpringBootTest} um Spring Injection des Mappers zu testen.
  * Normalerweise würde man für einen Mapper-Test eher einen normalen Unit-Test verwenden,
- * siehe {@link PersonMapperTest}.
+ * siehe {@link SimplePersonMapperWithInverse1Test}.
  */
 @SpringBootTest
-class PersonMapperSpringBootTest {
+class SimplePersonMapperSpringBootTest {
 
     @Autowired
-    PersonMapper personMapper;
+    SimplePersonMapperWithInverse1 personMapper;
 
     @Test
     void toPersonDto() {
 
-        Person person = new Person();
+        final SimplePersonEntity person = new SimplePersonEntity();
         person.setFirstname("Max");
         person.setLastname("Mustermann");
-        PersonDto personDto = personMapper.toPersonDto(person);
+        final SimplePersonDto personDto = personMapper.toPersonDto(person);
 
         assertAll(
             () -> assertThat(personDto.getGivenname()).isEqualTo("Max"),
