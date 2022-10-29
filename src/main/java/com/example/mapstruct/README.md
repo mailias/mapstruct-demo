@@ -11,6 +11,7 @@
 6. [Aufrufen andere Mapper](./invoking_other_mappers/README.md)
 7. [Qualifizierter Mapping-Methoden-Aufruf](./qualified/README.md)
 8. [Decorator](./decorator/README.md)
+9. [Decorator 2](./decorator2/README.md)
 
 
 # TODO
