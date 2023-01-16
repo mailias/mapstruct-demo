@@ -16,24 +16,21 @@ class PersonMapperWithUpdateTest {
     @Test
     void updatePersonFromPersonDto() {
 
-        final SimplePersonDto personDto = SimplePersonDto.builder()
+        final SimplePersonDto sourceDto = SimplePersonDto.builder()
             .givenname("Martina")
             .surname("Maier")
             .build();
 
-        final SimplePersonEntity personEntity = SimplePersonEntity.builder()
+        final SimplePersonEntity entityToUpdate = SimplePersonEntity.builder()
             .firstname("Martina")
             .lastname("Mustermann")
             .build();
 
-        final SimplePersonEntity result = personMapper.updatePersonFromPersonDto(personDto, personEntity);
+        personMapper.updatePersonFromPersonDto(sourceDto, entityToUpdate);
 
         assertAll(
-            () -> assertThat(personEntity.getFirstname()).isEqualTo("Martina"),
-            () -> assertThat(personEntity.getLastname()).isEqualTo("Maier"),
-
-            () -> assertThat(result.getFirstname()).isEqualTo("Martina"),
-            () -> assertThat(result.getLastname()).isEqualTo("Maier")
+            () -> assertThat(entityToUpdate.getFirstname()).isEqualTo("Martina"),
+            () -> assertThat(entityToUpdate.getLastname()).isEqualTo("Maier")
         );
     }
 

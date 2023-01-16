@@ -3,6 +3,7 @@
 
 # Decorator
 
+Beispiel: Person mit Liste von Accounts, Account hat Referenz auf Person. Setzen dieser Rückwärtsreferenzen per Decorator:
 - [Mapper](PersonDecoratorDemoMapper.java) 
 - [Die erzeugte Mapper-Implementierung](PersonDecoratorDemoMapperImpl.java)
 - [Test](PersonDecoratorDemoMapperTest.java) 

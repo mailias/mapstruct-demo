@@ -3,6 +3,7 @@
 
 # Decorator
 
+Beispiel: DTO mit zusammengesetztem Namen Vorname + Nachname, im Ziel-DTO aber Vorname und Nachname getrennt:
 - [Mapper](PersonDecoratorDemoMapper.java) 
 - [Die erzeugte Mapper-Implementierung](PersonDecoratorDemoMapperImpl.java)
 - [Test](PersonDecoratorDemoMapperTest.java) 

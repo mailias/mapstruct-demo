@@ -20,10 +20,15 @@ public interface PersonMapperWithUpdate {
     @Mapping(target = "foo", ignore = true)
     SimplePersonEntity toPerson(SimplePersonDto personDto);
 
-
-    // hier Update:
-    @InheritConfiguration
-    SimplePersonEntity updatePersonFromPersonDto(SimplePersonDto personDto, @MappingTarget SimplePersonEntity personEntity);
+    // ---------------------
+    // hier Update-Mapping:
+    // ---------------------
+    @InheritConfiguration // erbt Mappings von ähnlichen Methoden (s.o.)
+    void updatePersonFromPersonDto(
+          SimplePersonDto personDto,
+          // hier wird die bestehende Instanz, die aktualisiert werden soll, übergeben
+          @MappingTarget SimplePersonEntity personEntity
+    );
 
 
 }

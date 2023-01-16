@@ -3,6 +3,10 @@
 
 # Einfacher Mapper mit invertierter Konfiguration
 
+- Definition als Interface
+- oder als abstrakte Klasse
+- einschließlich invertierter Konfiguration
+
 ## Mapper als Interface definiert
 - [Mapper](SimplePersonMapperWithInverse1.java)  
 - [Die erzeugte Mapper-Implementierung](SimplePersonMapperWithInverse1Impl.java)
